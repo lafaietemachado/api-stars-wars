@@ -1,4 +1,4 @@
-export const requestInvalido = {
+export const invalidRequest = {
     type: 'object',
     required: [
         'detail'

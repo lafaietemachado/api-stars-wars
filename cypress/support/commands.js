@@ -1,7 +1,7 @@
 import Ajv from 'ajv'
 import { definitionHelper } from '../utils/schemaDefinitions'
 
-Cypress.Commands.add('testeContrato', (schema, resposta) => {
+Cypress.Commands.add('contractTest', (schema, answer) => {
     
     const getSchemaError = ajvErros => {
         return cy.wrap(
@@ -10,13 +10,13 @@ Cypress.Commands.add('testeContrato', (schema, resposta) => {
     }
 
     const ajv = new Ajv()
-    const validacao = ajv.addSchema(definitionHelper).compile(schema)
-    const valido = validacao(resposta)
+    const validation = ajv.addSchema(definitionHelper).compile(schema)
+    const valid = validation(answer)
 
-    if (!valido) {
-        getSchemaError(validacao.errors).then(schemaError => {
+    if (!valid) {
+        getSchemaError(validation.errors).then(schemaError => {
             throw new Error(schemaError)
         })
     } else
-        expect(valido, 'Validação de contrato').to.be.true
+        expect(valid, 'Validação de contrato').to.be.true
 })

@@ -1,4 +1,4 @@
-export const testeContratoFilms = {
+export const contractTestFilms = {
     type: 'object',
     required: [
         'count',
