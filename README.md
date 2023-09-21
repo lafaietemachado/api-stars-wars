@@ -1,7 +1,7 @@
 # Projeto de automação da API Star Wars
 
 - Objetivo: automatizar cenários de teste visando tempo, qualidade do projeto e avaliação do candidato
-- Squad: Teste de Automação
+- Squad: Desafio de Automação
 - Coordenador: 
 - P.O.: 
 - Tech leads: 
@@ -23,12 +23,12 @@
 
     - Caso as dependências do node não sejam instaladas, deve-se instalar de forma separada: npm install -D cypress@13.2.0
 
+      - Execução: abrir interface do cypress: npx cypress open
+
+      - Executar em modo headless: npx cypress run
+
     - Instalado e configurado a biblioteca de relatórios Mochawesome
+  
+      - Executar em modo headless gerando relatório do  mochawesome: npx cypress run --reporter mochawesome
 
     - Instalado a biblioteca ajv versão 8.12.0 para teste de contrato
-
-- Execução: abrir interface do cypress: npx cypress open
-
-- Executar em modo headless: npx cypress run
-
-- Executar em modo headless gerando relatório do  mochawesome: npx cypress run --reporter mochawesome
