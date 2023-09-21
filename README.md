@@ -1,37 +1,34 @@
-Projeto de automação da API Star Wars
-Objetivo: automatizar cenários de teste visando tempo, qualidade do projeto e avaliação do candidato
-Squad: Teste de Automação
-Coordenador: 
-P.O.: 
-Tech leads: 
-QA: Lafaiete Rodrigues Machado
+# Projeto de automação da API Star Wars
 
-Instalação e execução
-Requisitos:
-Node: a partir da versão 12 (Projeto realizado na versão 14.15.1)
+- Objetivo: automatizar cenários de teste visando tempo, qualidade do projeto e avaliação do candidato
+- Squad: Teste de Automação
+- Coordenador: 
+- P.O.: 
+- Tech leads: 
+- QA: Lafaiete Rodrigues Machado
 
-Hardware: 4GB Ram min, 8GB RAM recomendado
+## Instalação e execução
+### Requisitos:
+ - Node: a partir da versão 12 (Projeto realizado na versão 14.15.1)
 
-Execução e boas práticas:
+ - Hardware: 4GB Ram min, 8GB RAM recomendado
 
-Criar uma pasta com nome "Api-Star-Wars" na raiz da máquina (C:\Api-Star-Wars)
+ - Execução e boas práticas:
+   - Criar uma pasta com nome "Api-Star-Wars" na raiz da máquina (C:\Api-Star-Wars)
+   - Realizar o git clone para essa pasta e instalar dependências do node
+   - Ex:
+     - Com o terminal aberto:
+   
+       cd C:\Api-Star-Wars git clone 'link do projeto' npm install
 
-Realizar o git clone para essa pasta e instalar dependências do node
+    - Caso as dependências do node não sejam instaladas, deve-se instalar de forma separada: npm install -D cypress@13.2.0
 
-Ex:
+    - Instalado e configurado a biblioteca de relatórios Mochawesome
 
-Com o terminal aberto:
+    - Instalado a biblioteca ajv versão 8.12.0 para teste de contrato
 
-cd C:\Api-Star-Wars git clone 'link do projeto' npm install
+- Execução: abrir interface do cypress: npx cypress open
 
-Caso as dependências do node não sejam instaladas, deve-se instalar de forma separada: npm install -D cypress@13.2.0
+- Executar em modo headless: npx cypress run
 
-Instalado e configurado a biblioteca de relatórios Mochawesome
-
-Instalado a biblioteca ajv versão 8.12.0 para teste de contrato
-
-Execução: abrir interface do cypress: npx cypress open
-
-Executar em modo headless: npx cypress run
-
-Executar em modo headless gerando relatório do mochawesome: npx cypress run --reporter mochawesome
+- Executar em modo headless gerando relatório do  mochawesome: npx cypress run --reporter mochawesome
