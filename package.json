@@ -12,8 +12,7 @@
   },
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:test": "npx cypress run",
-    "test": "npx cypress run"
+    "cy:test": "npx cypress run"    
   },
   "repository": {
     "type": "git",
