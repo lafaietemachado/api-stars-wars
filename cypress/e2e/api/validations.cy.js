@@ -82,7 +82,7 @@ context('Validar se o filme 10 é válido e qual o tipo de retorno ao consultar'
     })
 
     context('Validar o formato de data válida e validar se a data não é padrão Brasil', () => {
-        it.only('formato de data', () => {
+        it('formato de data', () => {
             cy.request({
                 method: 'GET',
                 url: 'films/',
