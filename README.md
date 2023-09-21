@@ -28,10 +28,10 @@ Caso as dependências do node não sejam instaladas, deve-se instalar de forma s
 
 Instalado e configurado a biblioteca de relatórios Mochawesome
 
-Instalado a biblioteca ajv versão 8.12.0
+Instalado a biblioteca ajv versão 8.12.0 para teste de contrato
 
-Execução: abrir interface do cypress: npx run cy:open
+Execução: abrir interface do cypress: npx cypress open
 
-executar em modo headless: npx run cy:run
+Executar em modo headless: npx cypress run
 
-executar em modo headless gerando relatório do mochawesome: npx cypress run --reporter mochawesome
+Executar em modo headless gerando relatório do mochawesome: npx cypress run --reporter mochawesome
