@@ -50,7 +50,7 @@ context('Validar se o filme 10 é válido e qual o tipo de retorno ao consultar'
         }).then(({ status, body }) => {
             expect(status).to.eq(404)
 
-            cy.contractTest(requestInvalido, body)
+            cy.contractTest(invalidRequest, body)
         })
     })
 
