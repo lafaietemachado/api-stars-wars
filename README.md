@@ -1,6 +1,6 @@
 # Projeto de automação da API Star Wars
 
-- Objetivo: automatizar a API https://swapi.dev criando cenários de teste visando tempo, qualidade do projeto e avaliação do candidato 
+- Objetivo: automatizar a API https://swapi.dev criando cenários de teste visando tempo, qualidade do projeto.
 - Squad: Desafio de Automação
 - Coordenador: 
 - P.O.: 
